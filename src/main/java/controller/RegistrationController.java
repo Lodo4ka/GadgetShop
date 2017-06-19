@@ -1,6 +1,7 @@
 package controller;
 
 import com.sun.tools.internal.xjc.reader.xmlschema.bindinfo.BIConversion;
+import entity.User;
 import exception.ProductShopException;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -11,6 +12,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import service.RegistrationService;
 
 import java.io.IOException;
 
@@ -38,7 +40,7 @@ public class RegistrationController {
             String textField = txtUserName.getText();
             String passField = txtPass.getText();
 
-            BIConversion.User user = new User(textField, passField);
+           User user = new User(textField, passField);
 
             registrationService.register(user);
 
@@ -55,4 +57,4 @@ public class RegistrationController {
         }
     }
 }
-}
+

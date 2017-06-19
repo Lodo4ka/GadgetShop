@@ -1,9 +1,6 @@
 package service;
 
-import entity.OrderInfo;
 import entity.Product;
-import entity.User;
-import repository.OrderInfoRepository;
 import repository.ProductRepository;
 
 import java.util.List;

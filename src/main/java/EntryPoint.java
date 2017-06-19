@@ -8,7 +8,6 @@ import javafx.stage.Stage;
  * Created by lodo4ka on 19/06/2017.
  */
 public class EntryPoint extends Application{
-fsdfdsfdsfdsfs
 
     public static void main(String[] args) {
         launch(args);

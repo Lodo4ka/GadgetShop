@@ -18,7 +18,7 @@ public class OrderInfoRepository {
 
     private DbHandler dbHandler = DbHandler.getInstance();
 
-ссвысвымывмымсмсч
+
     public List<OrderInfo> selectOrders() {
         ResultSet resultSet = dbHandler.selectWithoutCondition("orderInfo");
 

@@ -19,14 +19,16 @@ public class DbHandler {
             this.connection = DriverManager.getConnection(connectionString);
             this.statement = connection.createStatement();
         } catch (SQLException e) {
-            throw new IllegalStateException("Database Exception. Reason: " + e.getMessage());
+          throw new IllegalStateException("Database Exception. Reason: " + e.getMessage());
         }
     }
 
     public static DbHandler getInstance() {
         if(instance ==null){
 
-            instance = new DbHandler("jdbc:sqlite:HomeWorkNumberTwelve/DB/registration.sqlite");
+            instance =
+                    new DbHandler
+                            ("jdbc:sqlite:/Users/lodo4ka/Desktop/Github/GadgetShop/DB/gadgershoodatabase.sqlite");
 
 
             HashMap<String, String> columnMap = new HashMap<>();

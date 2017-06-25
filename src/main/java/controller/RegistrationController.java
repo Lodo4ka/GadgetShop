@@ -48,7 +48,6 @@ public class RegistrationController {
                 appStage.hide();
                 appStage.setScene(homePageScene);
                 appStage.show();
-
             }
             else {
                 User user = new User(textField, passField);

@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
@@ -8,5 +11,10 @@
         <TextField fx:id="txtUserName" layoutX="153.0" layoutY="115.0" prefHeight="27.0" prefWidth="296.0" promptText="Login" />
         <PasswordField fx:id="txtPass" layoutX="152.0" layoutY="184.0" prefHeight="33.0" prefWidth="296.0" promptText="Password" />
         <Label fx:id="resultLabel" alignment="TOP_CENTER" layoutX="195.0" layoutY="48.0" prefHeight="17.0" prefWidth="213.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="195.0" layoutY="34.0" prefHeight="11.0" prefWidth="213.0" text="Please Sign Up">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
     </children>
 </AnchorPane>

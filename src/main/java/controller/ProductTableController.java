@@ -87,10 +87,4 @@ public class ProductTableController {
     }
 
 
-    public void remove(ActionEvent actionEvent) {
-
-        Product selectedItem = productTable.getSelectionModel().getSelectedItem();
-        ObservableList<Product> items = productTable.getItems();
-        items.remove(selectedItem);
-    }
 }

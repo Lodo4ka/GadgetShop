@@ -166,6 +166,25 @@ public class DbHandler {
         }
     }
 
+
+    public int delete(String tableName, HashMap<String, Object> condition) {
+
+        StringJoiner stringJoiner = new StringJoiner(" , ");
+
+        Set<Map.Entry<String, Object>> entries = condition.entrySet();
+        for (Map.Entry<String, Object> entry : entries) {
+            stringJoiner.add(entry.getKey() + "='" + entry.getValue() + "'");
+        }
+
+
+        try {
+            String sqlQuery = "DELETE FROM " + tableName + " WHERE " + stringJoiner.toString();
+            System.out.println(sqlQuery);
+            return statement.executeUpdate(sqlQuery);
+        } catch (SQLException e) {
+            throw new IllegalStateException("Filed to delete command. Reason: " + e.getMessage());
+        }
+    }
     public void close() {
         try {
             connection.close();

@@ -19,4 +19,12 @@ public class ProductService {
 
         return productRepository.getAll();
     }
+
+    public void add(Product product) {
+        productRepository.add(product);
+    }
+
+    public void remove(Product selectedItem) {
+        productRepository.remove(selectedItem);
+    }
 }

@@ -18,7 +18,7 @@ public class EntryPoint extends Application {
     public void start(Stage primaryStage) throws Exception {
 
 
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource("view/login.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource("view/startwindow.fxml"));
         Parent root = (Parent) fxmlLoader.load();
         Stage stage = new Stage();
         stage.setScene(new Scene(root));

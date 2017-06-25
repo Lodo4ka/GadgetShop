@@ -5,6 +5,7 @@ import repository.db.DbHandler;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -37,5 +38,21 @@ public class ProductRepository {
             e.printStackTrace();
         }
         return list;
+    }
+
+    public void add(Product product) {
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("name", product.getName());
+        map.put("description", product.getDescription());
+        map.put("type", product.getType());
+        map.put("price", product.getPrice());
+        dbHandler.insertInto("product",map);
+    }
+
+    public void remove(Product product) {
+
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("name", product.getName());
+        dbHandler.delete("product",map);
     }
 }

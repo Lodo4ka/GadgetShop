@@ -5,13 +5,13 @@ package entity;
  */
 public class Product {
 
-    private Integer id;
+    private int id;
     private String name;
     private String description;
     private String type;
     private int price;
 
-    public Product(Integer id, String name, String description, String type, int price) {
+    public Product(int id, String name, String description, String type, int price) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -19,11 +19,11 @@ public class Product {
         this.price = price;
     }
 
-    public Integer getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(int id) {
         this.id = id;
     }
 

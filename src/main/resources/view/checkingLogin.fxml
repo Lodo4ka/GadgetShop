@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.text.*?>
@@ -13,7 +12,7 @@
         <Button fx:id="btnCheck" layoutX="217.0" layoutY="239.0" mnemonicParsing="false" onAction="#btnCheck" prefHeight="27.0" prefWidth="166.0" text="check of user" />
         <TextField fx:id="txtUserNameS" layoutX="153.0" layoutY="115.0" prefHeight="27.0" prefWidth="296.0" promptText="Login" />
         <PasswordField fx:id="txtPassS" layoutX="152.0" layoutY="184.0" prefHeight="33.0" prefWidth="296.0" promptText="Password" />
-        <Label fx:id="resultLabelS" alignment="CENTER" layoutX="195.0" layoutY="48.0" prefHeight="17.0" prefWidth="213.0" text="Login successful" textAlignment="CENTER">
+        <Label fx:id="resultLabelS" alignment="CENTER" layoutX="195.0" layoutY="48.0" prefHeight="17.0" prefWidth="213.0" text="Please Sign in" textAlignment="CENTER">
             <font>
                 <Font size="18.0" />
             </font></Label>

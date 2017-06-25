@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StartwindowController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="155.0" prefHeight="130.0" prefWidth="290.0" text="Welcome to our website. Please Register or Authorization" textAlignment="CENTER" wrapText="true" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" fx:id="image">
+         <image>
+            <Image url="@../../../../../../../Pictures/Welcome-Image-1.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="96.0" layoutY="209.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="169.0" text="Sign in" fx:id="signIn" onAction="#signIn"/>
+      <Button layoutX="336.0" layoutY="209.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="169.0" text="Sign up" fx:id="signUp" onAction="#signUp"/>
+   </children>
+</AnchorPane>

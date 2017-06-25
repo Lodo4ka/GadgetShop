@@ -18,6 +18,8 @@ public class EntryPoint extends Application {
     public void start(Stage primaryStage) throws Exception {
 
 
+
+        //please push my changes
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getClassLoader().getResource("view/startwindow.fxml"));
         Parent root = (Parent) fxmlLoader.load();
         Stage stage = new Stage();

@@ -13,7 +13,7 @@
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="155.0" prefHeight="130.0" prefWidth="290.0" text="Welcome to our website. Please Register or Authorization" textAlignment="CENTER" wrapText="true" />
       <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="200.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" fx:id="image">
          <image>
-            <Image url="@../../../../../../../Pictures/Welcome-Image-1.png" />
+            <Image url="view/image/Welcome-Image-1.png" />
          </image>
       </ImageView>
       <Button layoutX="96.0" layoutY="209.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="169.0" text="Sign in" fx:id="signIn" onAction="#signIn"/>

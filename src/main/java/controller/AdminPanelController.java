@@ -65,15 +65,14 @@ public class AdminPanelController {
     }
 
 
-    public void remove(ActionEvent actionEvent) {
+    public void remove() {
         Product selectedItem = productTable.getSelectionModel().getSelectedItem();
         ObservableList<Product> items = productTable.getItems();
         items.remove(selectedItem);
         productService.remove(selectedItem);
     }
 
-    public void add(ActionEvent actionEvent) {
-        Product selectedItem = productTable.getSelectionModel().getSelectedItem();
+    public void add() {
         ObservableList<Product> items = productTable.getItems();
         Product product = new Product(Integer.parseInt(idField.getText()),nameField.getText(), descField.getText(),
                 typeField.getText(), Integer.parseInt(priceField.getText()));

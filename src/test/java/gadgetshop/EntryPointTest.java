@@ -11,11 +11,12 @@ public class EntryPointTest {
 
 
 
+
+
     @Test
     public void main() throws Exception {
 
-
-
+        throw new Exception();
 
     }
 
